@@ -5,36 +5,98 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.bg{
-    position: absolute;
-    right: 0;
+
+section{
+    background-image: url(./images/pattern-bg.svg), url(./images/pattern-curve.svg);
+    background-position-x: 1000px, left;
+    background-position-y:140px, 800px ;
+    background-repeat: no-repeat;
+    background-size: 700px 700px, ;
+    overflow: hidden;
+
+
+
 }
-.first__testimonial{
+
+
+.first__testimonial, .second__testimonial{
     position: relative;
-    text-align: center;
-    margin: 200px;
+    background-image: url(./images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position-x:150px ;
+    background-position-y:85px ;
+    overflow:visible;
+    margin: 200px 450px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1150px;
     display: flex;
+    text-align: center;
+    justify-content: center;
     justify-content: space-between;
-    border: 1px solid black;
 }
+
 .para{
     width: 700px;
     position: absolute;
     font-size: 32px;
+
     
 }
 .name{
     position: absolute;
     bottom: 50px;
+    margin-left: 50px;
 }
 .avatar{
-    
-}
-.second__testimonial{
-    visibility: hidden;
+    box-shadow: 20px 20px 10px 10px rgba(0, 0, 0, 0.034);
 }
 .info{
-    margin-top: 200px;
+    margin-top: 150px;
+    
 }
+.prev, .next{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 55px;
+    height: 50px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.prev{
+    border-top-left-radius:50% ;
+    border-bottom-left-radius:50% ;
+}
+.next{
+    border-top-right-radius:50% ;
+    border-bottom-right-radius:50% ;
+}
+
+.next__prev{
+    display: flex;
+    position: absolute;
+    margin-left: 645px;
+    margin-top: 25px;
+}
+.second__testimonial{
+   position:absolute;
+   visibility: hidden;
+   top: 0;
+}
+
+
+.next__btn .first__testimonial{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+.next__btn .second__testimonial{
+    z-index: 100;
+    visibility: visible;
+    opacity: 1;
+}
+
