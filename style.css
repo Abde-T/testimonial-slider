@@ -92,7 +92,7 @@ section{
 .next__btn .first__testimonial{
     opacity: 0;
     visibility: hidden;
-    transition: all 400ms;
+    transition: all 0ms ease;
 }
 .next__btn .second__testimonial{
     z-index: 100;
@@ -100,3 +100,6 @@ section{
     opacity: 1;
 }
 
+
+@media(max-width: 900px){
+}
